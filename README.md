@@ -127,3 +127,171 @@ func moveToMain(){
 
 -----
 
+
+
+###  **typeMismatch(Swift.Array<Any>, Swift.DecodingError.Context(codingPath: [], debugDescription: "Expected to decode Array<Any> but found a dictionary instead.", underlyingError: nil))**
+
+==> type 오류
+
+
+
+##### 변경 전
+
+```swift
+let exam = try JSONDecoder().decode([ExamInfo].self, from: data)
+```
+
+##### 변경 후
+
+```swift
+let exam = try JSONDecoder().decode(ExamInfo.self, from: data)
+```
+
+
+
+</br>
+
+
+
+-----
+
+
+
+</br>
+
+
+
+### **No value associated with key CodingKeys(stringValue: \"owner`\", intValue: nil)**
+
+=> ?을 생략해서 발생하는 문제였다....
+
+##### 변경 전
+
+```swift
+struct ExamInfo: Codable{
+    let owner: OwnerInfo
+    let title: String
+    let courseName: String
+    let courseCode: String
+    let startTime: String
+    let endTime: String
+}
+```
+
+
+
+##### 변경 후
+
+```swift
+struct ExamInfo: Codable{
+    let owner: OwnerInfo?
+    let title: String?
+    let courseName: String?
+    let courseCode: String?
+    let startTime: String?
+    let endTime: String?
+}
+```
+
+
+
+</br>
+
+
+
+----
+
+
+
+</br>
+
+
+
+### **cell.detailTextViewLabel이 보이지 않을 때**
+
+=> cell의 스타일을 변경하라
+
+##### 변경 전
+
+```swift
+let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+```
+
+
+
+##### 변경 후
+
+```swift
+let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+```
+
+
+
+</br>
+
+
+
+-----
+
+
+
+</br>
+
+### **json으로 데이터는 잘 들어왔는데 table view가 실행되지 않는경우**
+
+=> complete() 추가! 
+
+```swift
+DispatchQueue.main.async {  completed() }
+```
+
+
+
+</br>
+
+
+
+---
+
+
+
+</br>
+
+
+
+### **class has no initializers**
+
+==> 변수 타입 뒤에 '!' 붙혔더니 해결
+
+
+
+</br>
+
+
+
+----
+
+
+
+</br>
+
+
+
+### **'NSInvalidArgumentException', reason: 'Invalid type in JSON write(__SwiftValue)'**
+
+=> 첫번째 코드를 두번째 코드로 변경
+
+##### 변경 전
+
+```swift
+guard let httpBody = try? JSONSerialization.data(withJSONObject: parameter, options: []) else { return }
+```
+
+
+
+##### 변경 후
+
+```swift
+let httpBody = try! JSONEncoder().encode(parameter)
+```
+
