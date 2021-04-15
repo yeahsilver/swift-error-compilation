@@ -2,7 +2,7 @@
 
 > 블로그와 함께 업로드 할 예정입니다!
 >
-> naver blog: https://blog.naver.com/0_0yeggy/222054273459
+> naver blog: https://blog.naver.com/0_0yeggy
 
 
 
