@@ -300,7 +300,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 
 ### **xcconfig unable to open file (in target in project )**
-1 pod deintegrate 입력
+1. pod deintegrate 입력
 
 2. sudo gem install cocoapods-clean 입력
 
