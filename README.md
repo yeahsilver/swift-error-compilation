@@ -295,3 +295,21 @@ guard let httpBody = try? JSONSerialization.data(withJSONObject: parameter, opti
 let httpBody = try! JSONEncoder().encode(parameter)
 ```
 
+
+-----
+
+
+### **xcconfig unable to open file (in target in project )**
+1 pod deintegrate 입력
+
+2. sudo gem install cocoapods-clean 입력
+
+3. pod clean 입력
+
+4. pod setup 입력
+
+5. pod install 입력
+
+​
+
+후에 자신의 프로젝트 이름.xcworkspace를 open 후 command + b로 프로젝트 빌드
