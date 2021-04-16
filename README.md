@@ -313,3 +313,10 @@ let httpBody = try! JSONEncoder().encode(parameter)
 ​
 
 후에 자신의 프로젝트 이름.xcworkspace를 open 후 command + b로 프로젝트 빌드
+
+
+-----
+
+### **Command CompileSwift failed with a nonzero exit code**
+
+=> shift + command + k 입력시 해결
