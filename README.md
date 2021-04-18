@@ -326,3 +326,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 ### **this class is not key value coding-compliant for the key ___."**
 => View Controller에 Class 이름 확인 
+
+-----
+### **My structure does not conform to protocol 'Decodable' / 'Encodable'**
+> https://stackoverflow.com/questions/53252019/my-structure-does-not-conform-to-protocol-decodable-encodable/53252126
