@@ -330,3 +330,31 @@ let httpBody = try! JSONEncoder().encode(parameter)
 -----
 ### **My structure does not conform to protocol 'Decodable' / 'Encodable'**
 > https://stackoverflow.com/questions/53252019/my-structure-does-not-conform-to-protocol-decodable-encodable/53252126
+
+
+----
+
+### **TMS-90683: Missing Purpose String in Info.plist**
+1. 아래의 링크와 같이 Privacy 추가하기
+> https://kka7.tistory.com/40
+
+해당 작업을 진행하였는데도 안되면?
+
+
+2. 수동으로 입력하기
+
+plist.info 를 source code로 연 다음, 수동으로 추가하자
+
+
+먼저 plist.info에 오른쪽 마우스 버튼을 클릭한 뒤, OpenAs 에서  Source Code를 선택한다. 그 후 
+
+    <key>NSCalendarsUsageDescription</key>
+	<string>This app need to access your calendar events</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app need to access your camera events</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app need to access your photo library events</string>
+
+이렇게 수동으로 추가해주자.
+
+
