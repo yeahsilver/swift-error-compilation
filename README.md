@@ -332,7 +332,12 @@ let httpBody = try! JSONEncoder().encode(parameter)
 > https://stackoverflow.com/questions/53252019/my-structure-does-not-conform-to-protocol-decodable-encodable/53252126
 
 
+
+
 ----
+
+
+
 
 ### **TMS-90683: Missing Purpose String in Info.plist**
 1. 아래의 링크와 같이 Privacy 추가하기
