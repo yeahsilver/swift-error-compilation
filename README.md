@@ -295,9 +295,11 @@ guard let httpBody = try? JSONSerialization.data(withJSONObject: parameter, opti
 let httpBody = try! JSONEncoder().encode(parameter)
 ```
 
+</br>
 
 -----
 
+</br>
 
 ### **xcconfig unable to open file (in target in project )**
 1. pod deintegrate 입력
@@ -314,30 +316,40 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 후에 자신의 프로젝트 이름.xcworkspace를 open 후 command + b로 프로젝트 빌드
 
+</br>
 
 -----
+
+</br>
+
 
 ### **Command CompileSwift failed with a nonzero exit code**
 
 => shift + command + k 입력시 해결
 
+</br>
 
 -----
+
+</br>
 
 ### **this class is not key value coding-compliant for the key ___."**
 => View Controller에 Class 이름 확인 
 
+</br>
+
 -----
+
+</br>
+
 ### **My structure does not conform to protocol 'Decodable' / 'Encodable'**
 > https://stackoverflow.com/questions/53252019/my-structure-does-not-conform-to-protocol-decodable-encodable/53252126
 
-
-
+</br>
 
 ----
 
-
-
+</br>
 
 ### **TMS-90683: Missing Purpose String in Info.plist**
 1. 아래의 링크와 같이 Privacy 추가하기
