@@ -65,7 +65,7 @@ public func startCount(){
 
 
 
-### **Attempt to present UIAlertController whose view is not in the window hierarchy with localnotification**
+### Attempt to present UIAlertController whose view is not in the window hierarchy with localnotification
 
 - ##### 오류가 생성된 이유
 
@@ -129,7 +129,7 @@ func moveToMain(){
 
 
 
-###  **typeMismatch(Swift.Array<Any>, Swift.DecodingError.Context(codingPath: [], debugDescription: "Expected to decode Array<Any> but found a dictionary instead.", underlyingError: nil))**
+###  typeMismatch(Swift.Array<Any>, Swift.DecodingError.Context(codingPath: [], debugDescription: "Expected to decode Array<Any> but found a dictionary instead.", underlyingError: nil))
 
 ==> type 오류
 
@@ -161,8 +161,7 @@ let exam = try JSONDecoder().decode(ExamInfo.self, from: data)
 
 
 
-### **No value associated with key CodingKeys(stringValue: \"owner`\", intValue: nil)**
-
+### No value associated with key CodingKeys(stringValue: \"owner`\", intValue: nil)
 => ?을 생략해서 발생하는 문제였다....
 
 ##### 변경 전
@@ -207,7 +206,7 @@ struct ExamInfo: Codable{
 
 
 
-### **cell.detailTextViewLabel이 보이지 않을 때**
+### cell.detailTextViewLabel이 보이지 않을 때
 
 => cell의 스타일을 변경하라
 
@@ -237,7 +236,7 @@ let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
 
 </br>
 
-### **json으로 데이터는 잘 들어왔는데 table view가 실행되지 않는경우**
+### json으로 데이터는 잘 들어왔는데 table view가 실행되지 않는경우
 
 => complete() 추가! 
 
@@ -259,7 +258,7 @@ DispatchQueue.main.async {  completed() }
 
 
 
-### **class has no initializers**
+### class has no initializers
 
 ==> 변수 타입 뒤에 '!' 붙혔더니 해결
 
@@ -277,7 +276,7 @@ DispatchQueue.main.async {  completed() }
 
 
 
-### **'NSInvalidArgumentException', reason: 'Invalid type in JSON write(__SwiftValue)'**
+### 'NSInvalidArgumentException', reason: 'Invalid type in JSON write(__SwiftValue)'
 
 => 첫번째 코드를 두번째 코드로 변경
 
@@ -301,7 +300,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 </br>
 
-### **xcconfig unable to open file (in target in project )**
+### xcconfig unable to open file (in target in project )
 1. pod deintegrate 입력
 
 2. sudo gem install cocoapods-clean 입력
@@ -323,7 +322,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 </br>
 
 
-### **Command CompileSwift failed with a nonzero exit code**
+### Command CompileSwift failed with a nonzero exit code
 
 => shift + command + k 입력시 해결
 
@@ -333,7 +332,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 </br>
 
-### **this class is not key value coding-compliant for the key ___."**
+### this class is not key value coding-compliant for the key ___."
 => View Controller에 Class 이름 확인 
 
 </br>
@@ -342,7 +341,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 </br>
 
-### **My structure does not conform to protocol 'Decodable' / 'Encodable'**
+### My structure does not conform to protocol 'Decodable' / 'Encodable'
 > https://stackoverflow.com/questions/53252019/my-structure-does-not-conform-to-protocol-decodable-encodable/53252126
 
 </br>
@@ -351,7 +350,7 @@ let httpBody = try! JSONEncoder().encode(parameter)
 
 </br>
 
-### **TMS-90683: Missing Purpose String in Info.plist**
+### TMS-90683: Missing Purpose String in Info.plist
 1. 아래의 링크와 같이 Privacy 추가하기
 > https://kka7.tistory.com/40
 
