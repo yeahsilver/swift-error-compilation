@@ -374,3 +374,8 @@ plist.info 를 source code로 연 다음, 수동으로 추가하자
 이렇게 수동으로 추가해주자.
 
 
+------
+
+### 5 duplicate symbols for architecture x86_64
+
+Project -> Build Setting -> Other Linker Flag ->  "$(OTHER_LDFLAGS) -ObjC" 삽입
